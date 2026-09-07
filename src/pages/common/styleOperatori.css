@@ -269,7 +269,8 @@ padding-bottom: 0;
     width: 50%;
 }
 
-.referente-evento {
+/* MARCELLO - separatore verticale tra Colleghi e Referente evento */
+.colleghi-evento {
     border-right: 1px solid #335064;
 }
 

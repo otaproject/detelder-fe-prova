@@ -600,8 +600,6 @@ const TaskOperatore = () => {
                             :{totaleOre.split(":")[1] ?? "00"}
                         </span>
                     </div>
-                    
-                    <div className="ore-label">h</div>
                         {/* MARCELLO - abbreviazione unità ore */}
                     <div className="ore-label">h</div>
                     </div>

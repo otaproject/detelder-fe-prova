@@ -620,7 +620,7 @@
 
 /* =========================================================
    MARCELLO - DASHBOARD SINTESI OPERATORE
-   Spaziature e allineamento uniforme delle due card
+   Versione più compatta e bilanciata
    ========================================================= */
 
 .sintesi-container {
@@ -634,12 +634,14 @@
 .prossimi-turni-sintesi {
     flex: 1;
     min-width: 0;
-    min-height: 190px;
+
+    /* MARCELLO - ridotta altezza complessiva */
+    min-height: 160px;
 
     display: flex;
     flex-direction: column;
 
-    padding: 18px 16px 14px;
+    padding: 14px 14px 12px;
     box-sizing: border-box;
 
     border-radius: 16px;
@@ -657,11 +659,11 @@
 }
 
 
-/* MARCELLO - titoli allineati e con spazio uniforme */
+/* MARCELLO - titoli */
 .ore-mese-label,
 .prossimi-turni-label {
     padding-top: 0;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
 
     font-size: 15px;
     font-weight: bold;
@@ -678,7 +680,7 @@
 }
 
 
-/* MARCELLO - area centrale card ORE DEL MESE */
+/* MARCELLO - area centrale ORE DEL MESE */
 .ore-mese-value-content {
     flex: 1;
 
@@ -686,11 +688,13 @@
     align-items: center;
     justify-content: center;
 
-    gap: 7px;
-    min-height: 62px;
+    gap: 6px;
+
+    /* MARCELLO - ridotta altezza area centrale */
+    min-height: 48px;
 }
 
-/* MARCELLO - valore ore con minuti più piccoli */
+/* MARCELLO - valore ore/minuti */
 .ore-mese-value {
     display: flex;
     align-items: baseline;
@@ -710,11 +714,14 @@
     font-weight: 600;
 }
 
+/* MARCELLO - h allineata in basso e non come esponente */
 .ore-label {
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 700;
     color: #00d96f;
-    line-height: 1;
+
+    align-self: center;
+    transform: translateY(5px);
 }
 
 
@@ -727,7 +734,9 @@
     justify-content: center;
 
     gap: 12px;
-    min-height: 62px;
+
+    /* MARCELLO - ridotta altezza area centrale */
+    min-height: 48px;
 }
 
 .prossimi-turni-next-content {
@@ -768,17 +777,17 @@
 }
 
 
-/* MARCELLO - CTA uniformi e sempre allineate in basso */
+/* MARCELLO - CTA uniformi e allineate */
 .dettaglio-mese-sintesi,
 .dettaglio-turni-sintesi {
     width: 100%;
 
-    margin-top: 10px;
+    margin-top: 8px;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
 
-    padding: 9px 12px;
+    padding: 8px 12px;
 
     border-radius: 10px;
 

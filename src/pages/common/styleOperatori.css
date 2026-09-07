@@ -586,6 +586,11 @@ padding-bottom: 0;
     flex: 1;
     cursor: pointer;
 }
+/* MARCELLO - maggiore respiro superiore alle label delle dashboard */
+.ore-mese-label,
+.prossimi-turni-label {
+    padding-top: 20px;
+}
 
 .ore-mese-label {
     font-size: 15px;

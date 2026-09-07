@@ -930,12 +930,19 @@
     margin-left: 2px;
 }
 
+/* MARCELLO - note operative turni futuri uniformate ai turni di oggi */
 .turni-futuri-note-operative-content {
-    width: 60%;
-    margin-top: 2px;
+    width: 90%;
+    max-width: 100%;
+    box-sizing: border-box;
+
+    margin-top: 10px;
     border-radius: 10px;
     border: solid 1px #906121;
     background-color: #382c1f;
     padding: 10px;
-    margin-top: 10px;
+
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }

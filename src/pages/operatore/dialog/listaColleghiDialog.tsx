@@ -1,6 +1,6 @@
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { X, Circle } from "lucide-react"
+import { X, Circle, Crown } from "lucide-react"
 
 type ListaColleghi = {
   nome: string

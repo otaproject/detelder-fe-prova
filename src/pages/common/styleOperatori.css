@@ -105,6 +105,9 @@
 
     /* MARCELLO - aumento spazio tra le card turno */
     margin-bottom: 2rem;
+    /* MARCELLO - rimuove il padding inferiore standard della Card
+   che generava la fascia verde sotto il contenuto */
+padding-bottom: 0;
     border-color: #72ad97;
     box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
     border-radius: 16px;

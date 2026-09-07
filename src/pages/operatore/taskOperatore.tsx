@@ -590,7 +590,8 @@ const TaskOperatore = () => {
                             strokeWidth={1.5}
                         />
                         <div className="ore-mese-value">{totaleOre}</div>
-                        <div className="ore-label"> ore</div>
+                        {/* MARCELLO - abbreviazione unità ore */}
+                    <div className="ore-label">h</div>
                     </div>
                     <div className="dettaglio-mese-sintesi" onClick={() => navigate("/operator/rendicontazione")}>Vai al dettaglio</div>
                 </div>

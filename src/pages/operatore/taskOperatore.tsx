@@ -493,7 +493,42 @@ const TaskOperatore = () => {
 
                 return (
 
-                    <Card className="card-turni">
+                        {/* MARCELLO - colore card in base allo stato del turno */}
+                    <Card className={`card-turni ${statoTurno}`}>
+
+                                  /* MARCELLO - sfondo card turno corrente */
+                    .card-turni.IN_CORSO {
+                    background-image:
+                    linear-gradient(to bottom, #173d38, #173d38),
+                    linear-gradient(to bottom, #00ffb8, #00996e);
+}
+
+                    /* MARCELLO - sfondo card turno futuro */
+                    .card-turni.FUTURO {
+                    background-image:
+                    linear-gradient(to bottom, #1c2f46, #1c2f46),
+                    linear-gradient(to bottom, #5aa9e6, #406295);
+}
+
+                    /* MARCELLO - sfondo card turno passato */
+                    .card-turni.PASSATO {
+                    background-image:
+                    linear-gradient(to bottom, #252b31, #252b31),
+                    linear-gradient(to bottom, #6b7280, #40464d);
+}
+            /* MARCELLO - colore testata card in base allo stato turno */
+
+.card-turni.IN_CORSO .info-orario-turno {
+    background-color: #145247;
+}
+
+.card-turni.FUTURO .info-orario-turno {
+    background-color: #203b5c;
+}
+
+.card-turni.PASSATO .info-orario-turno {
+    background-color: #343a40;
+}
 
                         <CardContent className="turno-content">
 

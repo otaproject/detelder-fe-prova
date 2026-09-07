@@ -695,11 +695,22 @@
     justify-content: center;
 }
 
-/* MARCELLO - ridotto font del totale ore dashboard */
+/* MARCELLO - separazione grafica ore/minuti per valori lunghi e ridotto font */
 .ore-mese-value {
-    font-size: 28px;
+    display: flex;
+    align-items: baseline;
     font-weight: bold;
     color: #00d96f;
+    line-height: 1;
+}
+
+.ore-mese-ore {
+    font-size: 28px;
+}
+
+.ore-mese-minuti {
+    font-size: 17px;
+    font-weight: 600;
 }
 
 .ore-label {

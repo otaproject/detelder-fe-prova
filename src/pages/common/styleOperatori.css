@@ -420,7 +420,12 @@
     text-decoration: underline;
 }
 
+/* MARCELLO - qualifica Team Leader con icona Crown */
 .dialog-team-leader {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
     font-size: 13px;
     font-weight: normal;
     color: #ffc04a;

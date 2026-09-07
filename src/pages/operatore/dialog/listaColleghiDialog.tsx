@@ -88,10 +88,14 @@ export const ListaColleghiDialog = ({
 
                 </div>
                 <div className="dialog-orario-collega" >{collega.tipoMansione} {collega.oraInizio} - {collega.oraFine}</div>
-              {/* MARCELLO - gestione Team Leader compatibile con boolean MySQL 0/1 */}
+             {/* MARCELLO - Team Leader con icona Crown Lucide */}
               {collega.teamLeader && (
                   <div className="dialog-team-leader">
-                      Team leader
+                      <Crown
+                          size={14}
+                          strokeWidth={1.5}
+                      />
+                      <span>Team leader</span>
                   </div>
               )}
               </div>

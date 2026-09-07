@@ -586,10 +586,22 @@ const TaskOperatore = () => {
                     <div className="ore-mese-label">ORE DEL MESE</div>
                     <div className="ore-mese-value-content">
                         <CalendarClock
-                            className="h-7 w-7 text-[#00d96f]"
-                            strokeWidth={1.5}
-                        />
-                        <div className="ore-mese-value">{totaleOre}</div>
+                        className="h-7 w-7 text-[#00d96f]"
+                        /* MARCELLO - icona più leggera */
+                        strokeWidth={1}
+                    />
+                    
+                    {/* MARCELLO - ore e minuti separati per gestire valori a 3 cifre */}
+                    <div className="ore-mese-value">
+                        <span className="ore-mese-ore">
+                            {totaleOre.split(":")[0]}
+                        </span>
+                        <span className="ore-mese-minuti">
+                            :{totaleOre.split(":")[1] ?? "00"}
+                        </span>
+                    </div>
+                    
+                    <div className="ore-label">h</div>
                         {/* MARCELLO - abbreviazione unità ore */}
                     <div className="ore-label">h</div>
                     </div>

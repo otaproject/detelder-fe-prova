@@ -89,12 +89,11 @@ export const ListaColleghiDialog = ({
                 </div>
                 <div className="dialog-orario-collega" >{collega.tipoMansione} {collega.oraInizio} - {collega.oraFine}</div>
               {/* MARCELLO - gestione Team Leader compatibile con boolean MySQL 0/1 */}
-{collega.teamLeader && (
-    <div className="dialog-team-leader">
-        Team leader
-    </div>
-)}
-                )}
+              {collega.teamLeader && (
+                  <div className="dialog-team-leader">
+                      Team leader
+                  </div>
+              )}
               </div>
               <span className="dialog-telefono-collega" >
                 <a href={`tel:${collega.telefono}`} >

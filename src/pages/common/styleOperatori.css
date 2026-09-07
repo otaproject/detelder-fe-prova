@@ -649,8 +649,9 @@ padding-bottom: 0;
     justify-content: center;
 }
 
+/* MARCELLO - ridotto font del totale ore dashboard */
 .ore-mese-value {
-    font-size: 33px;
+    font-size: 28px;
     font-weight: bold;
     color: #00d96f;
 }

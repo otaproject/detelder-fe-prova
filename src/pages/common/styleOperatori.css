@@ -268,25 +268,41 @@
     color: #ccffec;
 }
 
+/* MARCELLO - note operative più larghe e testo lungo gestito senza scroll */
 .note-operative-content {
-    width: 60%;
+    width: 90%;
+    max-width: 100%;
+    box-sizing: border-box;
+
     margin-top: 2px;
     border-radius: 10px;
     border: solid 1px #906121;
     background-color: #382c1f;
     padding: 10px;
+
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .note-operative-label {
     font-size: 13px;
     font-weight: bold;
     color: #ffc04a;
+    margin-bottom: 4px;
 }
 
 .note-operative-value {
+    width: 100%;
+
     font-size: 14px;
     font-weight: normal;
+    line-height: 1.4;
     color: #f5f7fb;
+
+    white-space: normal;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 .info-personale-content {

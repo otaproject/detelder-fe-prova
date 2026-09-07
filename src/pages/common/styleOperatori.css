@@ -618,45 +618,172 @@
     color: #bfcfd1;
 }
 
+/* =========================================================
+   MARCELLO - DASHBOARD SINTESI OPERATORE
+   Spaziature e allineamento uniforme delle due card
+   ========================================================= */
+
 .sintesi-container {
     display: flex;
-    gap: 20px;
-    /* spazio tra i due */
+    align-items: stretch;
+    gap: 14px;
 }
 
-
-.ore-mese-sintesi {
-    border-radius: 16px;
-    border: solid 1px #00b95b;
-    background-color: rgba(7, 51, 33, 0.71);
+/* MARCELLO - struttura comune delle due dashboard */
+.ore-mese-sintesi,
+.prossimi-turni-sintesi {
     flex: 1;
+    min-width: 0;
+    min-height: 190px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 18px 16px 14px;
+    box-sizing: border-box;
+
+    border-radius: 16px;
     cursor: pointer;
 }
-/* MARCELLO - maggiore respiro superiore alle label delle dashboard */
-.ore-mese-label,
-.prossimi-turni-label {
-    padding-top: 15px;
-}
 
-.ore-mese-label {
-    font-size: 15px;
-    font-weight: bold;
-    color: #00d96f;
-    text-align: center;
+.ore-mese-sintesi {
+    border: solid 1px #00b95b;
+    background-color: rgba(7, 51, 33, 0.71);
 }
 
 .prossimi-turni-sintesi {
-    border-radius: 16px;
     border: solid 1px #c26cff;
     background-color: rgba(194, 108, 255, 0.13);
-    flex: 1;
-    cursor: pointer;
+}
+
+
+/* MARCELLO - titoli allineati e con spazio uniforme */
+.ore-mese-label,
+.prossimi-turni-label {
+    padding-top: 0;
+    margin-bottom: 8px;
+
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.ore-mese-label {
+    color: #00d96f;
 }
 
 .prossimi-turni-label {
-    font-size: 15px;
-    font-weight: bold;
     color: #c26cff;
+}
+
+
+/* MARCELLO - area centrale card ORE DEL MESE */
+.ore-mese-value-content {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+    min-height: 62px;
+}
+
+/* MARCELLO - valore ore con minuti più piccoli */
+.ore-mese-value {
+    display: flex;
+    align-items: baseline;
+
+    font-weight: bold;
+    color: #00d96f;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+.ore-mese-ore {
+    font-size: 28px;
+}
+
+.ore-mese-minuti {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.ore-label {
+    font-size: 12px;
+    font-weight: 700;
+    color: #00d96f;
+    line-height: 1;
+}
+
+
+/* MARCELLO - area centrale PROSSIMI TURNI */
+.prossimi-turni-row {
+    flex: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+    min-height: 62px;
+}
+
+.prossimi-turni-next-content {
+    width: 64px;
+    min-width: 64px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 6px 8px;
+
+    border-radius: 8px;
+    border: solid 1px #c26cff;
+    background-color: #17172c;
+
+    line-height: 1;
+}
+
+.prossimi-turni-value-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.15;
+    color: #b9c4d0;
+}
+
+.prossimi-turni-nessuno {
+    font-size: 14px;
+    font-weight: normal;
+    color: #b9c4d0;
+    text-align: center;
+}
+
+
+/* MARCELLO - CTA uniformi e sempre allineate in basso */
+.dettaglio-mese-sintesi,
+.dettaglio-turni-sintesi {
+    width: 100%;
+
+    margin-top: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+
+    padding: 9px 12px;
+
+    border-radius: 10px;
+
+    font-size: 13px;
+    font-weight: 700;
     text-align: center;
 }
 
@@ -670,100 +797,6 @@
     border: solid 1px #c26cff;
     background-color: #17172c;
     color: #c26cff;
-}
-
-.dettaglio-mese-sintesi,
-.dettaglio-turni-sintesi {
-    border-radius: 8px;
-    font-size: 13px;
-    font-weight: 600;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 10px;
-    /* MARCELLO - spinge entrambe le CTA sul fondo della card */
-    margin-top: auto;
-    margin-bottom: 10px;
-}
-
-.ore-mese-value-content {
-    display: flex;
-    align-items: baseline;
-    gap: 0.5rem;
-    justify-content: center;
-}
-
-/* MARCELLO - separazione grafica ore/minuti per valori lunghi e ridotto font */
-.ore-mese-value {
-    display: flex;
-    align-items: baseline;
-    font-weight: bold;
-    color: #00d96f;
-    line-height: 1;
-}
-
-.ore-mese-ore {
-    font-size: 28px;
-}
-
-.ore-mese-minuti {
-    font-size: 17px;
-    font-weight: 600;
-}
-
-.ore-label {
-    font-size: 11px;
-    font-weight: bold;
-    color: #00d96f;
-}
-
-.prossimi-turni-row {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
-}
-
-.prossimi-turni-nessuno {
-    /* MARCELLO - testo stato vuoto dashboard più compatto */
-    font-size: 14px;
-    font-weight: normal;
-    color: #b9c4d0;
-}
-/* MARCELLO - mantiene allineate verticalmente le CTA delle due dashboard */
-.ore-mese-sintesi,
-.prossimi-turni-sintesi {
-    display: flex;
-    flex-direction: column;
-}
-
-.prossimi-turni-next-content {
-    border-radius: 8px;
-    border: solid 1px #c26cff;
-    background-color: #17172c;
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;  
-    line-height: 1;  
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-right: 10px;
-    padding-left: 10px;    
-}
-
-
-.prossimi-turni-value-content {
-    font-size: 14px;
-    font-weight: normal;
-    color: #b9c4d0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    line-height: 1;    
 }
 
 .prossimi-turni-mese-value {

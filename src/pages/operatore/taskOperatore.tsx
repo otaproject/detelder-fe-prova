@@ -491,10 +491,9 @@ const TaskOperatore = () => {
                     turnoGiornaliero.oraFine
                 );
 
+                      /* MARCELLO - colore card in base allo stato del turno */
                 return (
-
-                        {/* MARCELLO - colore card in base allo stato del turno */}
-                    <Card className={`card-turni ${statoTurno}`}>
+    <Card className={`card-turni ${statoTurno}`}>
 
                         <CardContent className="turno-content">
 

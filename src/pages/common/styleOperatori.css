@@ -637,7 +637,8 @@ padding-bottom: 0;
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 10px;
-    margin-top: 10px;
+    /* MARCELLO - spinge entrambe le CTA sul fondo della card */
+margin-top: auto;
     margin-bottom: 10px;
 }
 
@@ -667,10 +668,18 @@ padding-bottom: 0;
     gap: 15px;
 }
 
-.prossimi-turni-nessuno{
-    font-size: 20px;
+.prossimi-turni-nessuno {
+    /* MARCELLO - testo stato vuoto dashboard più compatto */
+    font-size: 14px;
     font-weight: normal;
     color: #b9c4d0;
+}
+/* MARCELLO - mantiene allineate verticalmente le CTA delle due dashboard */
+.ore-mese-sintesi,
+.prossimi-turni-sintesi {
+    display: flex;
+    flex-direction: column;
+}
 }
 
 .prossimi-turni-next-content {

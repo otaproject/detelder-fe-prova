@@ -1,5 +1,8 @@
 /*HEADER OPERATORE INIZIO*/
 
+/* MARCELLO - font Mulish per interfaccia operatore */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;600;700;800;900&display=swap');
+
 .operatore-header {
     border-bottom: 1px solid #024842;
     position: sticky;
@@ -14,6 +17,9 @@
     padding: 0.75rem;
     background-color: #051424;
     min-height: 100vh;
+
+    /* MARCELLO - uniformato font interfaccia operatore */
+    font-family: "Mulish", sans-serif;
 }
 
 .titolo {
